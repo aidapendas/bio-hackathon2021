@@ -12,3 +12,8 @@ def CNN_aminoAcid_model(input_data, num_classes, label_smoothing = 0.05):
                   loss = tf.keras.losses.BinaryCrossentropy(label_smoothing = label_smoothing),
                   metrics = 'accuracy')
     return model
+
+training = model.fit(x = train_data, y = train_labels, batch_size = 64, epochs = 50, 
+                     validation_split = 0.2, shuffle = True, verbose = True)
+testing = model.evaluate(x = test_data, y = test_labels, verbose = 1)
+model.summary()
