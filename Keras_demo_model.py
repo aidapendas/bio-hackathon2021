@@ -1,6 +1,6 @@
 import tensorflow as tf
 from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Dense
+from tensorflow.keras.layers import Dense, Concatenate
 
 def CNN_aminoAcid_model(heavy_chain, light_chain, num_classes, label_smoothing = 0.05):
     X_input1 = tf.keras.Input(heavy_chain, name = 'Heavy_chain_data')
