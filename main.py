@@ -131,10 +131,10 @@ train_heavy, test_heavy, train_light, test_light, Y_train, Y_test = train_test_s
 # train_light = tf.cast(train_light, dtype = tf.float32)
 # test_light = tf.cast(test_light,dtype = tf.float32)
 
-train_heavy = train_heavy.astype("float32")
-test_heavy  = test_heavy.astype("float32")
-train_light = train_light.astype("float32")
-test_light  = test_light.astype("float32")
+train_heavy = train_heavy.astype(np.float32)
+test_heavy  = test_heavy.astype(np.float32)
+train_light = train_light.astype(np.float32)
+test_light  = test_light.astype(np.float32)
 
 del df,onehot_heavy,onehot_light,Y_data
 
@@ -200,7 +200,7 @@ output_node = ak.ClassificationHead(num_classes = 2)(dense_node_mg)
 clf = ak.AutoModel(
     inputs = (input_node_hv, input_node_lg),
     outputs = output_node,
-    project_name = 'Hackaton_keras_Trial02',
+    project_name = 'Hackaton_keras_Trial03',
     max_trials = 8,
     objective = 'val_loss',
     overwrite = False)
