@@ -25,7 +25,7 @@ clf = ak.AutoModel(
     objective = 'val_loss',
     overwrite = False)
 
-callback = tf.keras.callbacks.Earlystopping(monitor = 'val_loss', patience = 10, restore_best_weights = True)
+callback = tf.keras.callbacks.EarlyStopping(monitor = 'val_loss', patience = 10, restore_best_weights = True)
 clf.fit(x = (train_heavy, train_light), y = Y_hot_train,
         validation_data = ((test_heavy, test_light), Y_hot_test),
         epochs = 30,
