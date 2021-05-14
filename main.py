@@ -102,7 +102,7 @@ def aa2onehot(list_of_sequences, chain_type = None):
 # df.to_csv("shuffled/final.csv",index=False)
 
 
-df =  pd.read_csv('shuffled/final.csv')
+df =  pd.read_csv('trainset_shuffled/final.csv')
 ind = random.sample(range(len(df)),int(len(df)//2))
 df = df.iloc[ind,:]
 
