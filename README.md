@@ -1,6 +1,6 @@
 # Antibody Heavy-Light Chain Pairing — Bio-Hackathon 2021
 
-**Computational Biology Hackathon · April 2021 · Team of 5**
+**Computational Biology Hackathon · April 2021 · Team AminoBugs**
 
 ---
 
@@ -71,12 +71,9 @@ This work sits at the intersection of sequence biology and deep learning, an are
 
 ## Award
 
-🏆 **Mentor's Choice Award** — selected by the hackathon mentors as the standout project of the competition.
+🏆 **Mentor's Choice Award** — selected by the hackathon mentor
 
 ## Team
 
-Developed collaboratively by a team of 5 during the 2021 Computational Biology Hackathon.
+Developed collaboratively by the AminoBugs team during the 2021 Computational Biology Hackathon.
 
----
-
-*Part of an ongoing interest in applying machine learning to biomedical and drug discovery problems. See also: [NeuromatchAcademy course content](https://github.com/aidapendas/course-content) for computational neuroscience background.*
